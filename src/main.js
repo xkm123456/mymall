@@ -1,4 +1,7 @@
-import { createApp } from 'vue'
+import { createApp, devtools } from 'vue'
 import App from './App.vue'
+import router from './router/index'
 
-createApp(App).mount('#app')
+// use()添加路由
+createApp(App).use(router).mount('#app')
+
