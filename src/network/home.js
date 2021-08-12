@@ -7,3 +7,14 @@ export function getHomeMultidata()
         url:'/home/multidata'
     })
 }
+
+export function getHomeProductdata(type,page)
+{
+    return request({
+        url:'https://localhost:44324/Product/GetAllProduct',
+        params:{
+            type,
+            page
+        }
+    })
+}
